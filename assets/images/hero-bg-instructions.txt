@@ -1,0 +1,24 @@
+Hero Background Image Instructions
+
+The template is designed to use a hero background image at this location:
+assets/images/hero-bg-placeholder.jpg
+
+Please add your band's hero image with this filename to make it display properly.
+
+Recommended image specifications:
+- Size: 1920x1080 pixels (minimum)
+- Format: JPG or WEBP for better compression
+- Content: Band performing, artistic band photo, or atmospheric image that matches your band's style
+- Consider a darker or high-contrast image to work well with the white text overlay
+
+The hero section is designed with a dark overlay to ensure text readability regardless of the image used.
+
+If you want to modify how the hero background appears, check the CSS here:
+.hero {
+    background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+You can find this in the styles.css file in the "HERO SECTION" area.
