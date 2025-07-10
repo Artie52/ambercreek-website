@@ -379,7 +379,7 @@ header.scrolled .main-nav {
     justify-content: center;
     text-align: center;
     background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.jpg');
-    background-size: clamp(1350px, 130%, 4200px) auto;
+    background-size: clamp(890px, 120%, 4200px) auto;
     background-attachment: fixed !important;
     background-position: center 40%;
     background-repeat: no-repeat !important;
@@ -415,7 +415,6 @@ header.scrolled .main-nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     filter: drop-shadow(0 6px 12px rgb(0, 0, 0));
 }
 .cta-buttons {
@@ -1112,7 +1111,24 @@ footer {
         transform: translateY(0);
     }
 }
+/* iOS and mobile fixes */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
 
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
 /* ===== RESPONSIVE STYLING ===== */
 @media (max-width: 1200px) {
     html {
