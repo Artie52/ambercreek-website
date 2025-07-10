@@ -378,7 +378,7 @@ header.scrolled .main-nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.png');
+    background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.jpg');
     background-size: 130%;
     background-attachment: fixed;
     background-position: center 40%;
