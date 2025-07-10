@@ -13,7 +13,7 @@
     --color-text-dark: #1e1e1e; /* Dark text */
     --color-background: #121212; /* Very dark background */
     --color-background-alt: #1e1e1e; /* Slightly lighter for sections */
-    --color-overlay: rgba(0, 0, 0, 0.4); /* Overlay for hero images */
+    --color-overlay: rgba(0, 0, 0, 0.1); /* Overlay for hero images */
     
     /* Fonts */
     --font-primary: 'Montserrat', sans-serif;
@@ -267,7 +267,7 @@ header.scrolled .main-nav {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1400px;
@@ -283,7 +283,7 @@ header.scrolled .main-nav {
     font-size: 2.4rem;
     font-weight: 900;
     letter-spacing: 0.3rem;
-    color: var(--color-text);
+    color: var(--color-primary);
     transition: color var(--transition-fast);
 }
 
@@ -319,7 +319,7 @@ header.scrolled .main-nav {
 }
 
 .nav-links li a {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -387,9 +387,8 @@ header.scrolled .main-nav {
 
 .hero-content {
     padding: 0 var(--spacing-md);
-    max-width: 800px;
-    margin-top: 30vh;
-    filter: drop-shadow(rgba(0, 0, 0, 1)) !important;
+    max-width: 900px;
+    margin-top: 40vh;
 }
 
 .hero h1 {
@@ -403,11 +402,12 @@ header.scrolled .main-nav {
 
 .hero h2 {
     font-size: 2.4rem;
-    font-weight: 400;
     margin-bottom: var(--spacing-md);
     color: var(--color-tertiary);
     animation: fadeInUp 1s ease-out 0.3s;
     animation-fill-mode: both;
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 1), 0 3px 6px rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.9));
 }
 
 .hero-logo-png {
@@ -416,6 +416,7 @@ header.scrolled .main-nav {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    filter: drop-shadow(0 6px 12px rgb(0, 0, 0));
 }
 .cta-buttons {
     display: flex;
@@ -867,6 +868,7 @@ header.scrolled .main-nav {
 
 /* ===== STORE SECTION ===== */
 .store-section {
+    background-color: var(--color-background-alt);
     padding: var(--spacing-xl) 0;
 }
 
