@@ -410,6 +410,13 @@ header.scrolled .main-nav {
     animation-fill-mode: both;
 }
 
+.hero-logo-png {
+    width: clamp(300px, 90%, 400px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 .cta-buttons {
     display: flex;
     justify-content: center;
