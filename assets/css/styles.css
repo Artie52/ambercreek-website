@@ -380,6 +380,7 @@ header.scrolled .main-nav {
     text-align: center;
     background:  url('../images/hero-bg-placeholder.jpeg');
     background-size: clamp(1290px, 150%, 4200px) auto;
+    background-attachment: fixed !important;
     background-position: center 40%;
     background-repeat: no-repeat !important;
 }
@@ -1110,23 +1111,11 @@ footer {
         transform: translateY(0);
     }
 }
-/* iOS and mobile fixes */
-@supports (-webkit-touch-callout: none) {
-    .hero {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (max-device-width: 1024px) {
-    .hero {
-        background-attachment: scroll;
-    }
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 /* ===== RESPONSIVE STYLING ===== */
 @media (max-width: 1200px) {
