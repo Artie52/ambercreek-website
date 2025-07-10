@@ -379,7 +379,7 @@ header.scrolled .main-nav {
     justify-content: center;
     text-align: center;
     background:  url('../images/hero-bg-placeholder.jpeg');
-    background-size: clamp(1290px, 90%, 4200px) auto;
+    background-size: clamp(1500px, 150%, 4200px) auto;
     background-attachment: fixed !important;
     background-position: center 40%;
     background-repeat: no-repeat !important;
@@ -1113,10 +1113,13 @@ footer {
 }
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
-  .parallax {
+  .hero {
     background-attachment: scroll;
+    background-position: center 60%;
+
   }
 }
+
 /* ===== RESPONSIVE STYLING ===== */
 @media (max-width: 1200px) {
     html {
