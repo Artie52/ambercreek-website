@@ -1117,6 +1117,22 @@ footer {
     background-attachment: scroll;
   }
 }
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-start !important;
+    }
+    
+    .hero-content {
+        margin-top: 0;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding-top: 90px;
+    }
+}
 /* ===== RESPONSIVE STYLING ===== */
 @media (max-width: 1200px) {
     html {
