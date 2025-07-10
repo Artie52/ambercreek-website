@@ -378,11 +378,14 @@ header.scrolled .main-nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.jpg');
+    background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.jpeg');
     background-size: clamp(890px, 120%, 4200px) auto;
     background-attachment: fixed !important;
     background-position: center 40%;
     background-repeat: no-repeat !important;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .hero-content {
