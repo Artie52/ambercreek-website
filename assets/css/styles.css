@@ -379,7 +379,7 @@ header.scrolled .main-nav {
     justify-content: center;
     text-align: center;
     background: linear-gradient(var(--color-overlay), var(--color-overlay)), url('../images/hero-bg-placeholder.jpg');
-    background-size: clamp(290%, 130%, 130%) auto;;
+    background-size: clamp(1350px, 130%, 4200px) auto;
     background-attachment: fixed !important;
     background-position: center 40%;
     background-repeat: no-repeat !important;
