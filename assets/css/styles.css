@@ -380,7 +380,7 @@ header.scrolled .main-nav {
     text-align: center;
     background:  url('../images/hero-bg-placeholder.jpeg');
     background-size: clamp(1500px, 150%, 4200px) auto;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
     background-position: center 40%;
     background-repeat: no-repeat !important;
 }
@@ -1111,14 +1111,6 @@ footer {
         transform: translateY(0);
     }
 }
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .hero {
-    background-attachment: scroll;
-    background-position: center 60%;
-
-  }
-}
 
 /* ===== RESPONSIVE STYLING ===== */
 @media (max-width: 1200px) {
@@ -1139,11 +1131,13 @@ footer {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 780px) {
     html {
         font-size: 55%;
     }
-    
+    .hero {
+        background-attachment: scroll;
+    }
     .menu-toggle {
         display: flex;
     }
@@ -1198,7 +1192,7 @@ footer {
     html {
         font-size: 52%;
     }
-    
+
     .hero h1 {
         font-size: 6rem;
     }
