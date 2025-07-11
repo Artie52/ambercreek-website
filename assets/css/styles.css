@@ -12,6 +12,7 @@
     --color-text: #e6e6e6; /* Light gray for text */
     --color-text-dark: #1e1e1e; /* Dark text */
     --color-background: #121212; /* Very dark background */
+    --color-background-pure-black: #000000; /* Very dark background */
     --color-background-alt: #1e1e1e; /* Slightly lighter for sections */
     --color-overlay: rgba(0, 0, 0, 0.1); /* Overlay for hero images */
     
@@ -379,6 +380,7 @@ header.scrolled .main-nav {
     justify-content: center;
     text-align: center;
     background:  url('../images/hero-bg-placeholder.jpeg');
+    background-color: var(--color-background-pure-black);
     background-size: clamp(1500px, 150%, 4200px) auto;
     background-attachment: fixed;
     background-position: center 40%;
