@@ -1137,6 +1137,8 @@ footer {
     }
     .hero {
         background-attachment: scroll;
+        background-position: center -10%;
+        background-size: clamp(1100px, 100%, 2200px) auto;
     }
     .menu-toggle {
         display: flex;
